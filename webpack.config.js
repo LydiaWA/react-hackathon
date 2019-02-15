@@ -30,6 +30,24 @@ module.exports = {
         test: /\.html$/,
         loader: 'file?name=[name].[ext]',
       },
-    ],
-  },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+                name: '[path][name]-[hash:8].[ext]'
+            },
+          },
+      ]
+      }
+    ]
+  }
 };
