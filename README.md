@@ -6,3 +6,5 @@ $npm install
 
 #start the app
 $npm start
+
+[![CircleCI](https://circleci.com/gh/LydiaWA/react-hackathon.svg?style=shield)](https://circleci.com/gh/LydiaWA/react-hackathon)
